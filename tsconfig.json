@@ -1,0 +1,16 @@
+{
+    "extends": "@tsconfig/node18-strictest/tsconfig.json",
+    "include": [
+        "./src/**/*",
+    ],
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "./src/*",
+                "./dist/*",
+            ],
+        },
+        "outDir": "./dist",
+    }
+}
